@@ -1,7 +1,7 @@
 <div id="dashboard-controller-cms-content" class="cms-content center dashboard-admin" data-layout-type="border" data-pjax-fragment="Content">
 	<div class="cms-content-header north">
 		<div class="cms-content-header-info">
-			<% include CMSBreadcrumbs %>
+			<% include SilverStripe/Admin/CMSBreadcrumbs %>
 		</div>
 		<div class="dashboard-top-buttons">
 		<% if CanAddPanels %>

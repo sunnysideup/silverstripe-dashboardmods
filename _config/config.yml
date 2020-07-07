@@ -7,7 +7,7 @@ After:
 ---
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - 'dashboardmods/css/dashboard.css'
+    - 'sunnysideup/dashboardmods: client/css/dashboard.css'
 Dashboard:
   menu_icon: "dashboardmods/images/dashboard.png"
 DashboardPanel:
