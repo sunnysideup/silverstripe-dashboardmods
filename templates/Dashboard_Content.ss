@@ -2,7 +2,7 @@
 	<div class="cms-content-header north">
 		<div class="cms-content-header-info">
 			<% include CMSBreadcrumbs %>
-		</div>	
+		</div>
 		<div class="dashboard-top-buttons">
 		<% if CanAddPanels %>
 			<a class="ss-ui-button ss-ui-action-constructive manage-dashboard" href="javascript:void(0);"><% _t('Dashboard.ADDPANEL','New Panel') %></a>
@@ -11,7 +11,7 @@
 			<span class="ss-fancy-dropdown right">
 				<a class="ss-ui-button ss-fancy-dropdown-btn" href="javascript:void(0)"><% _t('Dashboard_Content.ADMINISTRATION','Administration') %></a>
 				<span class="ss-fancy-dropdown-options">
-					<a class="set-as-default dashboard-message-link" href="$Link(setdefault)"><% _t('Dashboard.SETASDEFAULT','Make this the default dashboard') %></a>	
+					<a class="set-as-default dashboard-message-link" href="$Link(setdefault)"><% _t('Dashboard.SETASDEFAULT','Make this the default dashboard') %></a>
 					<a class="apply-to-all dashboard-message-link" href="$Link(applytoall)"><% _t('Dashboard.APPLYTOALL','Apply this dashboard to all members') %></a>
 				</span>
 			</span>
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 	<div class="dashboard dashboard-sortable" data-sort-url="$Link(sort)">
-		<div id="dashboard-message"></div>		
+		<div id="dashboard-message"></div>
 		<div class="dashboard-panel-list"><!--
 		<% loop Panels %>
 		-->$PanelHolder<!--
@@ -31,16 +31,7 @@
 				<div class="dashboard-panel-selection-inner">
 					<div class="dashboard-panel-header">
 						<div class="dashboard-panel-icon">
-
-/**
-  * ### @@@@ START REPLACEMENT @@@@ ###
-  * WHY: automated upgrade
-  * OLD: /images/ (case sensitive)
-  * NEW: /client/images/ (COMPLEX)
-  * EXP: Check new location, also see: https://docs.silverstripe.org/en/4/developer_guides/templates/requirements/#direct-resource-urls
-  * ### @@@@ STOP REPLACEMENT @@@@ ###
-  */
-							<img src="dashboardmods/client/images/settings.png" width="24" height="24" />
+							<img src="$resourceURL('sunnysideup/dashboardmods:client/images/settings.png')" width="24" height="24" />
 						</div>
 
 						<h3><% _t('Dashboard.CHOOSEPANELTYPE','Choose a panel type') %></h3>

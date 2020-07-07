@@ -7,7 +7,7 @@
   * EXP: Check if the class name can still be used as such. The ShortName provides the name without NameSpace
   * ### @@@@ STOP REPLACEMENT @@@@ ###
   */
-<div id="dashboard-panel-$ID" class="dashboard-panel $`ClassName.ShortName $Size" data-refresh-url="$Link" >
+<div id="dashboard-panel-$ID" class="dashboard-panel $ClassName.ShortName $Size" data-refresh-url="$Link" >
 	<div class="dashboard-panel-inner">
 		<div class="dashboard-panel-header">
 
@@ -39,28 +39,13 @@
 			<% end_if %>
 			<div class="dashboard-panel-toolbar">
 				<% if Dashboard.CanConfigurePanels %>
-
-/**
-  * ### @@@@ START REPLACEMENT @@@@ ###
-  * WHY: automated upgrade
-  * OLD: /images/ (case sensitive)
-  * NEW: /client/images/ (COMPLEX)
-  * EXP: Check new location, also see: https://docs.silverstripe.org/en/4/developer_guides/templates/requirements/#direct-resource-urls
-  * ### @@@@ STOP REPLACEMENT @@@@ ###
-  */
-				<a class="btn-dashboard-panel-configure" href="$ConfigLink"><img src="dashboardmods/client/images/settings-application.png" /></a>
+				<a class="btn-dashboard-panel-configure" href="$ConfigLink">
+                    <img src="$resourceURL('sunnysideup/dashboardmods:client/images/settings-application.png')" />
 				<% end_if %>
 				<% if Dashboard.CanDeletePanels %>
-
-/**
-  * ### @@@@ START REPLACEMENT @@@@ ###
-  * WHY: automated upgrade
-  * OLD: /images/ (case sensitive)
-  * NEW: /client/images/ (COMPLEX)
-  * EXP: Check new location, also see: https://docs.silverstripe.org/en/4/developer_guides/templates/requirements/#direct-resource-urls
-  * ### @@@@ STOP REPLACEMENT @@@@ ###
-  */
-				<a class="btn-dashboard-panel-delete" href="$DeleteLink"><img src="dashboardmods/client/images/delete.png" /></a>
+				<a class="btn-dashboard-panel-delete" href="$DeleteLink">
+                    <img src="$resourceURL('sunnysideup/dashboardmods:client/images/delete.png')" />
+                </a>
 				<% end_if %>
 			</div>
 		</div>
