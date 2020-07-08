@@ -1,12 +1,3 @@
-
-/**
-  * ### @@@@ START REPLACEMENT @@@@ ###
-  * WHY: automated upgrade
-  * OLD: $ClassName (case sensitive)
-  * NEW: $`ClassName.ShortName (COMPLEX)
-  * EXP: Check if the class name can still be used as such. The ShortName provides the name without NameSpace
-  * ### @@@@ STOP REPLACEMENT @@@@ ###
-  */
 <div id="dashboard-panel-$ID" class="dashboard-panel $ClassName.ShortName $Size" data-refresh-url="$Link" >
 	<div class="dashboard-panel-inner">
 		<div class="dashboard-panel-header">
