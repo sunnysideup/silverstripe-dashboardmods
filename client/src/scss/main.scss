@@ -150,6 +150,10 @@
         top: 0;
         margin-top: 0;
         padding-top: 8px;
+        img {
+          width: 24px !important;
+          height: 24px !important;
+        }
       }
     }
     .dashboard-panel-icon {
@@ -211,6 +215,11 @@
       .dashboard-panel-footer-actions {
         text-align: left;
         margin-left: 5px;
+        .ui-button {
+          .ui-button-text {
+            padding: .2em 0.8em;
+          }
+        }
       }
       .dashboard-panel-toolbar {
         top: 8px;
@@ -384,6 +393,15 @@
   }
 
   .DashboardSectionEditorPanel {
+    .configure-form {
+      border-color: #00796B;
+    }
+    .dashboard-panel-header {
+      background: #00796B;
+      img {
+        display: none;
+      }
+    }
     .dashboard-panel-icon {
       width: 24px;
       background-image: url(../images/work.png);
@@ -402,6 +420,14 @@
   .ss-fancy-dropdown-options {
     border-radius: 3px;
     box-shadow: none;
+    a {
+      &:first-child {
+        border-radius: 3px 3px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 3px 3px;
+      }
+    }
   }
   .dashboard-has-many-editor-detail-form-form {
     border-radius: 5px;
@@ -417,6 +443,9 @@
       .middleColumn {
         margin-left: 0;
         clear: both;
+      }
+      &.checkbox {
+        padding-left: 0;
       }
     }
   }
@@ -484,102 +513,6 @@
     }
     a.last.active {
       background: url(../images/full.png) no-repeat;
-    }
-  }
-
-  .dashboard-panel.DashboardModelAdminPanel {
-    .dashboard-panel-header {
-      background: #F50057;
-    }
-    .configure-form {
-      border-color: #F50057;
-    }
-  }
-  .dashboard-panel.DashboardRecentEditsPanel {
-    .dashboard-panel-header {
-      background: #4A148C;
-    }
-    .configure-form {
-      border-color: #4A148C;
-    }
-  }
-  .dashboard-panel.DashboardGridFieldPanel {
-    .dashboard-panel-header {
-      background: #1A237E;
-    }
-    .configure-form {
-      border-color: #1A237E;
-    }
-  }
-  .dashboard-panel.DashboardWeatherPanel {
-    .dashboard-panel-header {
-      background: #FF3D00;
-    }
-    .configure-form {
-      border-color: #FF3D00;
-    }
-  }
-  .dashboard-panel.DashboardQuickLinksPanel {
-    .dashboard-panel-header {
-      background: #2962FF;
-    }
-    .configure-form {
-      border-color: #2962FF;
-    }
-  }
-  .dashboard-panel.DashboardRecentFilesPanel {
-    .dashboard-panel-header {
-      background: #43A047;
-    }
-    .configure-form {
-      border-color: #43A047;
-    }
-  }
-  .dashboard-panel.DashboardSectionEditorPanel {
-    .dashboard-panel-header {
-      background: #00796B;
-    }
-    .configure-form {
-      border-color: #00796B;
-    }
-  }
-
-  .dashboard-panel-footer-actions {
-    .ui-button {
-      .ui-button-text {
-        padding: .2em 0.8em;
-      }
-    }
-  }
-  .DashboardSectionEditorPanel {
-    .dashboard-panel-header {
-      img {
-        display: none;
-      }
-    }
-  }
-  .available-panel-icon {
-    img {
-      width: 24px !important;
-      height: 24px !important;
-    }
-  }
-  .ss-fancy-dropdown-options {
-    a {
-      &:first-child {
-        border-radius: 3px 3px 0 0;
-      }
-      &:last-child {
-        border-radius: 0 0 3px 3px;
-      }
-    }
-  }
-  .dashboard-has-many-editor-form {
-    box-sizing: border-box;
-  }
-  .dashboard-has-many-editor-detail-form-form {
-    .field.checkbox {
-      padding-left: 0;
     }
   }
 }

@@ -1,0 +1,53 @@
+
+  .dashboard-panel.DashboardModelAdminPanel {
+    .dashboard-panel-header {
+      background: #F50057;
+    }
+    .configure-form {
+      border-color: #F50057;
+    }
+  }
+  .dashboard-panel.DashboardRecentEditsPanel {
+    .dashboard-panel-header {
+      background: #4A148C;
+    }
+    .configure-form {
+      border-color: #4A148C;
+    }
+  }
+  .dashboard-panel.DashboardGridFieldPanel {
+    .dashboard-panel-header {
+      background: #1A237E;
+    }
+    .configure-form {
+      border-color: #1A237E;
+    }
+  }
+  .dashboard-panel.DashboardWeatherPanel {
+    .dashboard-panel-header {
+      background: #FF3D00;
+    }
+    .configure-form {
+      border-color: #FF3D00;
+    }
+  }
+  .dashboard-panel.DashboardQuickLinksPanel {
+    .dashboard-panel-header {
+      background: #2962FF;
+    }
+    .configure-form {
+      border-color: #2962FF;
+    }
+  }
+  .dashboard-panel.DashboardRecentFilesPanel {
+    .dashboard-panel-header {
+      background: #43A047;
+    }
+    .configure-form {
+      border-color: #43A047;
+    }
+  }
+
+  .dashboard-has-many-editor-form {
+    box-sizing: border-box;
+  }

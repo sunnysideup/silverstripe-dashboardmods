@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass scss/main.scss > ../css/dashboard.css -watch",
-    "build": "node-sass scss/main.scss > ../css/dashboard.css --output-style compressed -x"
+    "watch": "node-sass scss/style.scss > ../css/dashboard.css -watch",
+    "build": "node-sass scss/style.scss > ../css/dashboard.css --output-style compressed -x"
   },
   "author": "",
   "license": "ISC",
