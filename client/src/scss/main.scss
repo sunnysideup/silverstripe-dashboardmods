@@ -1,0 +1,585 @@
+.dashboard {
+  height: 100%;
+  padding-bottom: 20px;
+  ul {
+    li {
+      a {
+        &:hover {
+          background: #F0F4F7;
+          text-decoration: none;
+          color: #015a96;
+        }
+      }
+    }
+  }
+  form {
+    .field.dashboardbuttonoptions {
+      .middleColumn {
+        min-width: 0;
+      }
+    }
+  }
+  .dashboard-sortable {
+    margin: 40px 0 0 20px;
+  }
+  .dashboard-panel {
+    position: relative;
+    .dashboard-panel-content {
+      height: 220px;
+      background-color: #ffffff;
+      border-left: 1px solid rgb(218, 216, 216);
+      border-right: 1px solid rgb(218, 216, 216);
+      >ul {
+        margin: -10px;
+        li {
+          border: 1px solid #eee;
+        }
+        a {
+          padding: 3px 10px;
+          font-size: 11px;
+        }
+      }
+
+      dl {
+        color: #333;
+      }
+      dt {
+        color: #333;
+      }
+      color: #333;
+      dd {
+        width: 46%;
+        margin-top: 1.3em;
+        border-bottom: 1px solid #eee;
+      }
+      a {
+        color: #333;
+      }
+      dt {
+        width: 46%;
+        margin-top: 1.3em;
+        border-bottom: 1px solid #eee;
+        font-weight: bold;
+        float: right;
+        clear: right;
+        color: #6D4C41;
+      }
+      dd {
+        padding-left: 10px;
+        float: left;
+        clear: left;
+        text-align: right;
+        font-weight: bold;
+      }
+      li {
+        padding: 10px;
+        clear: left;
+        list-style: none;
+      }
+    }
+    .configure-form {
+      border-top: 3px solid #728896;
+    }
+    .dashboard-panel-inner {
+      background: #f9f9f9;
+      border: none;
+      height: 312px;
+      position: relative;
+      ul {
+        padding-left: 0;
+        li {
+          border-top: none !important;
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: 1px solid #eee !important;
+          a {
+            padding: 0;
+            font-size: inherit;
+          }
+        }
+      }
+    }
+    .dashboard-panel-header {
+      padding: 13px 0 11px 47px;
+      background: #728896;
+      border: 1px solid #b3c0c9;
+      cursor: move;
+      color: #fff;
+      overflow: hidden;
+      border-radius: 3px 3px 0 0;
+      position: relative;
+      z-index: 0;
+      .dashboard-panel-header-actions {
+        position: static;
+        margin-right: 5px;
+        float: left;
+        .ui-button {
+          span {
+            position: absolute !important;
+            clip: rect(1px, 1px, 1px, 1px);
+          }
+          width: 19px;
+          height: 19px;
+          &:after {
+            content: '+';
+            font-size: 15px;
+            padding-top: 2px;
+            display: block;
+          }
+        }
+      }
+    }
+    .dashboard-panel-selection {
+      .dashboard-panel-header {
+        background-color: #FFEB3B;
+        h3 {
+          color: #333;
+        }
+        .dashboard-panel-icon {
+          background-color: #e6b414;
+          height: 22px;
+        }
+      }
+      .dashboard-panel-footer {
+        background-color: #FFFF8D;
+      }
+    }
+    .available-panel {
+      background-color: #FFEB3B;
+      .available-panel-icon {
+        top: 0;
+        margin-top: 0;
+        padding-top: 8px;
+      }
+    }
+    .dashboard-panel-icon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 7px;
+      background: rgba(255,255,255,0.6);
+      border-right: 1px solid rgba(255,255,255,0.2);
+      bottom: 0!important;
+      img {
+        opacity: 0.57;
+      }
+    }
+
+    .dashboard-panel-configure-actions {
+      border-radius: 0 0 3px 3px;
+      background: #F0F4F7;
+      border: 1px solid rgb(218, 216, 216);
+      border-top: none;
+      box-shadow: none;
+      text-align: left;
+      height: 2.5em;
+      padding: 5px 4px;
+      .ui-button {
+        .ui-button-text {
+          padding: .2em 0.8em;
+        }
+      }
+      .ss-ui-button {
+        font-size: 11px;
+        padding: 0;
+      }
+      button[name='action_saveConfiguration'] {
+        float: right;
+      }
+      button[name='action_cancel'] {
+        float: left;
+      }
+    }
+    .dashboard-panel-configure-fields {
+      background: #f9f9f9;
+      border: 1px solid rgb(218, 216, 216);
+      height: 261px;
+      .field {
+        select {
+          margin: 0;
+        }
+        border-bottom: 0;
+        margin: 0;
+      }
+    }
+    .dashboard-panel-footer {
+      min-height: 20px;
+      height: 2.5em;
+      background: #F0F4F7;
+      border: 1px solid rgb(218, 216, 216);
+      border-radius: 0 0 3px 3px;
+      .dashboard-panel-footer-actions {
+        text-align: left;
+        margin-left: 5px;
+      }
+      .dashboard-panel-toolbar {
+        top: 8px;
+      }
+    }
+    .dashboard-panel-list {
+      padding-bottom: 53px;
+      .dashboard-panel-toolbar {
+        right: 10px;
+        left: 10px;
+        a {
+          display: block;
+          float: left;
+          opacity: 0.3;
+          &:hover {
+            opacity: 1;
+          }
+          &:first-child {
+            display: block;
+            float: right;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:nth-child(1n) {
+      .dashboard-panel-header {
+        background-color: #B71C1C;
+      }
+      .dashboard-panel-footer {
+        background-color: #FFEBEE;
+      }
+    }
+    &:nth-child(2n) {
+      .dashboard-panel-header {
+        background-color: #880E4F;
+      }
+      .dashboard-panel-footer {
+        background-color: #FCE4EC;
+      }
+    }
+    &:nth-child(3n) {
+      .dashboard-panel-header {
+        background-color: #4A148C;
+      }
+      .dashboard-panel-footer {
+        background-color: #F3E5F5;
+      }
+    }
+    &:nth-child(4n) {
+      .dashboard-panel-header {
+        background-color: #311B92;
+      }
+      .dashboard-panel-footer {
+        background-color: #EDE7F6;
+      }
+    }
+    &:nth-child(5n) {
+      .dashboard-panel-header {
+        background-color: #1A237E;
+      }
+      .dashboard-panel-footer {
+        background-color: #E8EAF6;
+      }
+    }
+    &:nth-child(6n) {
+      .dashboard-panel-header {
+        background-color: #0D47A1;
+      }
+      .dashboard-panel-footer {
+        background-color: #E3F2FD;
+      }
+    }
+    &:nth-child(7n) {
+      .dashboard-panel-header {
+        background-color: #01579B;
+      }
+      .dashboard-panel-footer {
+        background-color: #E1F5FE;
+      }
+    }
+    &:nth-child(8n) {
+      .dashboard-panel-header {
+        background-color: #006064;
+      }
+      .dashboard-panel-footer {
+        background-color: #E0F7FA;
+      }
+    }
+    &:nth-child(9n) {
+      .dashboard-panel-header {
+        background-color: #004D40;
+      }
+      .dashboard-panel-footer {
+        background-color: #E0F2F1;
+      }
+    }
+    &:nth-child(10n) {
+      .dashboard-panel-header {
+        background-color: #1B5E20;
+      }
+      .dashboard-panel-footer {
+        background-color: #E8F5E9;
+      }
+    }
+    &:nth-child(11n) {
+      .dashboard-panel-header {
+        background-color: #33691E;
+      }
+      .dashboard-panel-footer {
+        background-color: #F1F8E9;
+      }
+    }
+    &:nth-child(12n) {
+      .dashboard-panel-header {
+        background-color: #827717;
+      }
+      .dashboard-panel-footer {
+        background-color: #F9FBE7;
+      }
+    }
+    &:nth-child(13n) {
+      .dashboard-panel-header {
+        background-color: #F57F17;
+      }
+      .dashboard-panel-footer {
+        background-color: #FFFDE7;
+      }
+    }
+    &:nth-child(14n) {
+      .dashboard-panel-header {
+        background-color: #FF6F00;
+      }
+      .dashboard-panel-footer {
+        background-color: #FFF8E1;
+      }
+    }
+    &:nth-child(15n) {
+      .dashboard-panel-header {
+        background-color: #E65100;
+      }
+      .dashboard-panel-footer {
+        background-color: #FFF3E0;
+      }
+    }
+    &:nth-child(16n) {
+      .dashboard-panel-header {
+        background-color: #BF360C;
+      }
+      .dashboard-panel-footer {
+        background-color: #FBE9E7;
+      }
+    }
+    &:nth-child(17n) {
+      .dashboard-panel-header {
+        background-color: #3E2723;
+      }
+      .dashboard-panel-footer {
+        background-color: #EFEBE9;
+      }
+    }
+    &:nth-child(18n) {
+      .dashboard-panel-header {
+        background-color: #212121;
+      }
+      .dashboard-panel-footer {
+        background-color: #FAFAFA;
+      }
+    }
+  }
+
+  .DashboardSectionEditorPanel {
+    .dashboard-panel-icon {
+      width: 24px;
+      background-image: url(../images/work.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .available-panel {
+    background: #F0F4F7;
+    box-shadow: none;
+    border: 1px solid rgb(218, 216, 216);
+    &:hover {
+      background: #E0E8ED;
+    }
+  }
+  .ss-fancy-dropdown-options {
+    border-radius: 3px;
+    box-shadow: none;
+  }
+  .dashboard-has-many-editor-detail-form-form {
+    border-radius: 5px;
+    border: 1px solid rgb(218, 216, 216);
+    box-sizing: border-box;
+    height: 270px;
+    padding: 20px;
+    background-color: #ededed;
+    top: 35px;
+    left: 35px;
+    width: 100%;
+    .field {
+      .middleColumn {
+        margin-left: 0;
+        clear: both;
+      }
+    }
+  }
+  .dashboard-has-many-editor {
+    background: transparent;
+    border: 0;
+    .dashboard-sortable {
+      border-top: 1px solid rgb(218, 216, 216);
+      margin: 0 -10px;
+      li {
+        padding: 0;
+        margin: 0;
+        a {
+          &:first-child {
+            padding: 6px 10px;
+          }
+        }
+      }
+    }
+  }
+  .dashboard-has-many-editor-header {
+    padding: 0;
+  }
+  .dashboard-panel-quick-link {
+    margin: 0;
+  }
+  .dashboard-button-options-btn-group {
+    a.active {
+      opacity: 1;
+    }
+    a {
+      &:hover {
+        opacity: 1;
+      }
+      opacity: 0.3;
+      width: 21px;
+      height: 10px;
+    }
+    a.middle {
+      background: url(../images/half.png) no-repeat;
+      width: 21px;
+      &:hover {
+        background: url(../images/half.png) no-repeat;
+        width: 21px;
+      }
+    }
+    a.middle.active {
+      background: url(../images/half.png) no-repeat;
+      width: 21px;
+    }
+    a.first {
+      background: url(../images/quarter.png) no-repeat;
+      &:hover {
+        background: url(../images/quarter.png) no-repeat;
+      }
+    }
+    a.first.active {
+      background: url(../images/quarter.png) no-repeat;
+    }
+    a.last {
+      background: url(../images/full.png) no-repeat;
+      &:hover {
+        background: url(../images/full.png) no-repeat;
+      }
+    }
+    a.last.active {
+      background: url(../images/full.png) no-repeat;
+    }
+  }
+
+  .dashboard-panel.DashboardModelAdminPanel {
+    .dashboard-panel-header {
+      background: #F50057;
+    }
+    .configure-form {
+      border-color: #F50057;
+    }
+  }
+  .dashboard-panel.DashboardRecentEditsPanel {
+    .dashboard-panel-header {
+      background: #4A148C;
+    }
+    .configure-form {
+      border-color: #4A148C;
+    }
+  }
+  .dashboard-panel.DashboardGridFieldPanel {
+    .dashboard-panel-header {
+      background: #1A237E;
+    }
+    .configure-form {
+      border-color: #1A237E;
+    }
+  }
+  .dashboard-panel.DashboardWeatherPanel {
+    .dashboard-panel-header {
+      background: #FF3D00;
+    }
+    .configure-form {
+      border-color: #FF3D00;
+    }
+  }
+  .dashboard-panel.DashboardQuickLinksPanel {
+    .dashboard-panel-header {
+      background: #2962FF;
+    }
+    .configure-form {
+      border-color: #2962FF;
+    }
+  }
+  .dashboard-panel.DashboardRecentFilesPanel {
+    .dashboard-panel-header {
+      background: #43A047;
+    }
+    .configure-form {
+      border-color: #43A047;
+    }
+  }
+  .dashboard-panel.DashboardSectionEditorPanel {
+    .dashboard-panel-header {
+      background: #00796B;
+    }
+    .configure-form {
+      border-color: #00796B;
+    }
+  }
+
+  .dashboard-panel-footer-actions {
+    .ui-button {
+      .ui-button-text {
+        padding: .2em 0.8em;
+      }
+    }
+  }
+  .DashboardSectionEditorPanel {
+    .dashboard-panel-header {
+      img {
+        display: none;
+      }
+    }
+  }
+  .available-panel-icon {
+    img {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+  .ss-fancy-dropdown-options {
+    a {
+      &:first-child {
+        border-radius: 3px 3px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 3px 3px;
+      }
+    }
+  }
+  .dashboard-has-many-editor-form {
+    box-sizing: border-box;
+  }
+  .dashboard-has-many-editor-detail-form-form {
+    .field.checkbox {
+      padding-left: 0;
+    }
+  }
+}
