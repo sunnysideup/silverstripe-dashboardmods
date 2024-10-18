@@ -31,7 +31,7 @@
                 <div class="dashboard-panel-selection-inner">
                     <div class="dashboard-panel-header">
                         <div class="dashboard-panel-icon">
-                            <img src="$resourceURL('sunnysideup/dashboardmods:client/images/settings.png')" width="24" height="24" />
+                            <img loading="lazy" src="$resourceURL('sunnysideup/dashboardmods:client/images/settings.png')" width="24" height="24" />
                         </div>
 
                         <h3><% _t('Dashboard.CHOOSEPANELTYPE','Choose a panel type') %></h3>
@@ -40,7 +40,7 @@
                         <% loop AllPanels %>
                             <div class="available-panel $EvenOdd" data-type="$Class" data-create-url="$CreateLink" <% if ShowConfigure %>data-configure="true"<% end_if %>>
                                 <div class="available-panel-icon">
-                                    <img src="$Icon" />
+                                    <img loading="lazy" src="$Icon" />
                                 </div>
                                 <div class="available-panel-content">
                                     <h4>$Label</h4>

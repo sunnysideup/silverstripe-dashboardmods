@@ -3,7 +3,7 @@
         <div class="dashboard-panel-header">
 
             <div class="dashboard-panel-icon">
-                <img src="$Icon" width="24" height="24" />
+                <img loading="lazy" src="$Icon" width="24" height="24" />
             </div>
 
             <h3>$Title</h3>
@@ -31,11 +31,11 @@
             <div class="dashboard-panel-toolbar">
                 <% if Dashboard.CanConfigurePanels %>
                 <a class="btn-dashboard-panel-configure" href="$ConfigLink">
-                    <img src="$resourceURL('sunnysideup/dashboardmods:client/images/settings-application.png')" />
+                    <img loading="lazy" src="$resourceURL('sunnysideup/dashboardmods:client/images/settings-application.png')" />
                 <% end_if %>
                 <% if Dashboard.CanDeletePanels %>
                 <a class="btn-dashboard-panel-delete" href="$DeleteLink">
-                    <img src="$resourceURL('sunnysideup/dashboardmods:client/images/delete.png')" />
+                    <img loading="lazy" src="$resourceURL('sunnysideup/dashboardmods:client/images/delete.png')" />
                 </a>
                 <% end_if %>
             </div>
