@@ -7,19 +7,13 @@
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/recipe-cms": "^6.0"
+        "silverstripe/recipe-cms": "^6.0",
+        "sunnysideup/dashboard": "dev-main"
     },
     "extra": {
         "expose": [
             "client/images",
             "client/css"
         ]
-    },
-    "yet-to-update": {
-        "sunnysideup/dashboard": {
-            "section": "require",
-            "current": "*",
-            "reason": "no-compatible-stable-release"
-        }
     }
 }
